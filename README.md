@@ -7,14 +7,17 @@
 每条日志包含以下字段：
 
 ## 字段名	说明
-timestamp	日志记录时间戳，精确到毫秒，便于识别高频操作及异常行为模式
-uid	用户唯一标识符（User ID），用于追踪用户行为
-type	访问类型，如 mail 表示邮件系统相关的访问
-appName	应用名称，例如 ldap，用于标识系统组件或服务
-sourceIp	用户请求的源 IP 地址
-action	用户尝试执行的操作类型，例如 login
-result	操作结果，常见值为 success 或 fail
-message	日志附加信息，如“login from mail ldap”
+| 字段名         | 说明                             |
+| ----------- | ------------------------------ |
+| `timestamp` | 日志记录时间戳，精确到毫秒，便于识别高频操作及异常行为模式  |
+| `uid`       | 用户唯一标识符（User ID），用于追踪用户行为      |
+| `type`      | 访问类型，如 `mail` 表示邮件系统相关的访问      |
+| `appName`   | 应用名称，例如 `ldap`，用于标识系统组件或服务     |
+| `sourceIp`  | 用户请求的源 IP 地址                   |
+| `action`    | 用户尝试执行的操作类型，例如 `login`         |
+| `result`    | 操作结果，常见值为 `success` 或 `fail`   |
+| `message`   | 日志附加信息，如“login from mail ldap” |
+
 
 # English Description
 We collected 7,439,701 HTTP request logs from the Shanghai University authentication system API during the period of January 1st to January 10th, 2024.
@@ -24,11 +27,14 @@ This dataset records various user activity events in the system's HTTP logs. It 
 Each log entry includes the following fields:
 
 ## Field	Description
-timestamp	Timestamp of the log entry, accurate to the millisecond, useful for detecting high-frequency operations and abnormal patterns
-uid	Unique user identifier (User ID) used to track individual behavior
-type	Type of access, e.g., mail indicates access related to the mail system
-appName	Name of the application or service component, e.g., ldap
-sourceIp	Source IP address of the user request
-action	Type of action attempted by the user, such as login
-result	Result of the operation, typically success or fail
-message	Additional context or message, e.g., “login from mail ldap”
+| Field       | Description                                                                                                                   |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `timestamp` | Timestamp of the log entry, accurate to the millisecond, useful for detecting high-frequency operations and abnormal patterns |
+| `uid`       | Unique user identifier (User ID) used to track individual behavior                                                            |
+| `type`      | Type of access, e.g., `mail` indicates access related to the mail system                                                      |
+| `appName`   | Name of the application or service component, e.g., `ldap`                                                                    |
+| `sourceIp`  | Source IP address of the user request                                                                                         |
+| `action`    | Type of action attempted by the user, such as `login`                                                                         |
+| `result`    | Result of the operation, typically `success` or `fail`                                                                        |
+| `message`   | Additional context or message, e.g., “login from mail ldap”                                                                   |
+
